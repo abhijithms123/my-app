@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    /* background-color:blanchedalmond; */
+    height: 80%;
+
+
+}
+p{
+    color:midnightblue;
+    margin: auto;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.form{
+    /* background-color: blanchedalmond; */
+    height: 10em;
+width: 15em;
+}
+h3{
+    text-align: center;
+}
+/* input.ng-invalid{
+    border: 5px solid red;
+} */
+.error {
+  border: 1px solid red;
+}

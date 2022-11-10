@@ -1,0 +1,66 @@
+<!-- <body>
+<form action="">
+    <label for="product">Product Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" >
+    <br>
+    <label for="product">Product Category : </label>
+    <input type="text" >
+    <br>
+    <label for="product">Product Price :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="number" >
+    <br>
+
+     <label for="product">Product Id : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" >
+    <br>
+    <input type="submit" value="Submit">
+</form>
+</body> -->
+<h3>Add Product</h3>
+<form [formGroup]="productForm">
+<div class="form">
+<div>
+        <label>Title</label>
+        <input type="text" id="title" formControlName="title"
+             [ngClass]="{'error':isInvalid('title')}" />
+
+        <div *ngIf="productForm.get('title')?.dirty && productForm.get('title')?.invalid">
+            <div *ngIf="productForm.get('title')?.errors?.['required']">
+                Please enter title
+            </div>
+            <div *ngIf="productForm.get('title')?.errors?.['minlength']">
+                Please enter atleast 5 characters
+            </div>
+            <div *ngIf="productForm.get('title')?.errors?.['maxlength']">
+                Please enter maximum 20 characters
+            </div>
+        </div>
+    </div>
+ <div>
+        <label>Price</label>
+        <input type="number" id="price" formControlName="price" [ngClass]="{'error':isInvalid('price')}"/>
+        <div *ngIf="productForm.get('price')?.errors?.['priceEvenValidator']">
+            Price should be even
+        </div>
+        <div *ngIf="productForm.errors?.['priceCategoryValidator']">
+            Price should be greater than 50000 for Laptop
+        </div>
+    </div>
+
+<div>
+  <label for="">Category</label>
+  <select type="text" formControlName="category" >
+  <option value="{{option}}" *ngFor="let option of categories">{{option}}</option>
+  </select>
+</div>
+<div>
+  <label for="">Image</label>
+  <input type="text" formControlName="imagePath" />
+</div>
+<div>
+  <label for="">Description</label>
+  <textarea  formControlName="productDetail" ></textarea>
+</div>
+<button type="submit" (click)="addProduct()">Submit</button>
+</div>
+</form>

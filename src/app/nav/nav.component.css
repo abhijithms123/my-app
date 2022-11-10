@@ -1,0 +1,34 @@
+/* 
+.item{
+    display: none;
+}
+.group{
+    display: flex;
+    flex-direction: row;
+}
+.container:hover .item:hover{
+    background-color: gray;
+    display: block;
+}
+.dropdown-content {
+    display: none;
+    z-index: -1;
+  }
+    .dropdown-content:hover div:hover {
+    background-color: gray;
+    border-radius: 20px;
+    display: block;
+  }
+.dropdown{
+    border: 5px solid black;
+    border-radius: 20px;
+
+} 
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover i {display: none;}
+ */
+
+ .dropdown-content{
+  margin-bottom: 10px;
+  margin-top: 10px;
+ }

@@ -1,0 +1,29 @@
+body{
+  
+    /* background-color:#f9f3f0; */
+    height: 80%;
+    width: 100%;
+
+
+}
+h2{
+ margin: auto;
+ padding: auto;
+    color:rgb(19, 114, 209) ;
+    padding: 10px;
+}
+p{  font-size: 22px;
+    color:rgb(22, 102, 221) ;
+    margin: auto;
+}
+
+
+.container{
+
+
+ /* padding: auto; */
+    background-color: antiquewhite;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}

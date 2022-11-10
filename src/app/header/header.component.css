@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    padding: 12px;
+    color:rgb(255, 255, 255) ;
+        -webkit-user-select: none;
+    user-select: none;
+}

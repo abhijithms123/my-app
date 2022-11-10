@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+*{     
+     -webkit-user-select: none;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    /* height: 100%;
+    width: 100%; */
+    
+
+}
+img{
+    object-fit: scale-down;
+}
+/* html{
+    width:100vw;
+    height:100vh;
+}
+body{
+    width:100vw;
+    height:100vh;
+ 
+} */

@@ -1,0 +1,12 @@
+<div *ngIf="product">
+  <div class="container">
+  <div class="Summary">
+    <div>{{ product.title }}</div>
+    Price : {{ product.price }}
+    <div>{{ product.category }}</div>
+    <div>{{ product.productDetail }}</div>
+    <div><img src="{{product.imagePath}}" alt=""></div>
+    <button (click)="editProduct()">Edit Product</button>
+  </div>
+
+</div></div>

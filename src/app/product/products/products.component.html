@@ -1,0 +1,45 @@
+
+
+<div class="container">
+ 
+ 
+
+  <!-- <table class="table ">
+    <tr class="table row">
+      
+      <th class="table" >Index</th>
+        <th class="table" >Title</th>
+        <th class="table">Price</th>
+        <th class="table">Category</th>
+        <th class="table">Image</th>
+    </tr>
+  <tr class="table row" *ngFor="let item of products; let i = index">
+    <td class="table data">{{ i+1 }} </td>
+    <td class="table data">{{ item.title }} </td>
+    <td class="table data">{{ item.price }}</td>
+    <td class="table data">{{ item.category }}</td>
+    <td class="table data"><button type="submit"> <img src="{{item.imagePath}}" alt=""></button></td> -->
+  <!-- <td class="button-img" (mouseout)="setProduct()"    (mouseover)="selectProduct(item.id)"><img src="{{item.imagePath}}" ></td>
+  </tr>
+</table> -->
+  <div class="flex-container">
+    <div class="box" *ngFor="let item of products">
+      <p>{{ item.title }}</p>
+      <p>Price :{{ item.price }}</p>
+      <p>Category :{{ item.category }}</p>
+      <img class="button-img"
+     
+        (click)="selectProduct(item.id)"
+        src="{{ item.imagePath }}"
+      />
+    </div>
+  </div>
+
+
+  <!-- <app-productdetail [selectedProduct_Id]="selectedProductId"></app-productdetail> -->
+</div>
+  <div class="container">  <app-productdetail 
+     (productToEdit)="editProduct($event)"></app-productdetail>
+    <app-edit-product (message)="($event)"></app-edit-product>
+ </div>
+

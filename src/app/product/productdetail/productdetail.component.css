@@ -1,0 +1,24 @@
+.Summary{
+ 
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 1em;
+    /* margin: auto; */
+    /* background-color: hsla(15, 78%, 86%, 0.642); */
+    text-align: center;
+    width:30vw;
+    border-radius: 50px;
+    height: 25vh;
+}
+ img{
+
+
+    /* object-fit:contain; */
+    max-width: 25vw;
+    max-height: 20vh;
+
+}
+.container{
+    display: flex;
+}

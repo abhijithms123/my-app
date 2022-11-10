@@ -1,0 +1,19 @@
+<!-- <div *ngFor="let menu of menuItems"><a href="#">{{menu}}</a></div> -->
+<!-- <div *ngFor="let menu of menuItems "><p  routerLink={{menu.itemPath}}>{{menu.itemName}}</p></div> -->
+<!-- <div><p routerLink="/">Home</p></div>
+  <div><p routerLink="/products">Products</p></div>
+  <div><p routerLink="/add-product">Add Product</p></div> -->
+<div class="dropdown">
+  <!-- <i class="material-icons" style="font-size: 3vh">apps</i> -->
+  <div class="dropdown-content" *ngFor="let item of menuItems">
+    <div
+     class="group" [routerLink]="item.itemPath">
+      <!-- <p class="material-icons"  style="font-size: 5vh" >{{item.itemSymbol}}</p> -->
+    <p  style="font:sans-serif,3vh" >{{ item.itemName }}</p>
+    </div>
+  </div>
+</div>
+<!-- <i class="material-icons">home</i>
+<i class="material-icons">
+  add_card
+</i> -->
